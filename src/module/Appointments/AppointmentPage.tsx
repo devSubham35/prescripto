@@ -1,19 +1,24 @@
 import { Button } from '@/components/ui/button'
 import CustomRatingComponent from '@/components/common/CustomRatingComponent'
 import { Calendar } from 'lucide-react'
+import CustomHeader from '@/components/common/CustomHeader'
 
 const AppointmentPage = () => {
 
     return (
         <div className='container py-4 md:py-10'>
 
-            <div className="flex flex-row items-center justify-between mb-5 md:mb-8">
-                <div>
+            <div className="flex flex-row items-center justify-between">
+                {/* <div>
                     <h1 className='text-xl md:text-3xl font-bold mb-2'>My Appointments</h1>
                     <p className='text-xs md:text-base text-muted-foreground'>
                         Manage your healthcare appointments and consultations
                     </p>
-                </div>
+                </div> */}
+                <CustomHeader
+                    title="My Appointments"
+                    subTitle="Manage your healthcare appointments and consultations"
+                />
                 <div className="mt-4 md:mt-0">
                     <Button className="w-full md:w-auto">
                         <Calendar className="w-4 h-4 md:mr-2" />

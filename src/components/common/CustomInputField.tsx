@@ -5,7 +5,7 @@ import { Eye, EyeOff } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface CustomInputFieldProps extends InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+  label?: string;
   error?: boolean;
   helperText?: string;
 }
@@ -23,7 +23,7 @@ const CustomInputField = ({
 
   return (
     <div className="grid gap-1.5">
-      <Label htmlFor={fieldProps.id || fieldProps.name}>{label}</Label>
+      {label && <Label htmlFor={fieldProps.id || fieldProps.name}>{label}</Label>}
       <div className="relative">
         <Input
           {...fieldProps}

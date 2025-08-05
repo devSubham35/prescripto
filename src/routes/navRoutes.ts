@@ -8,6 +8,7 @@ export const navRoutes = {
     contact_us: "/contact-us",
 
     dashboards: {
-        appointment: "/dashboard/appointment"
+        profile: "/dashboard/profile",
+        appointment: "/dashboard/appointment",
     }
 }

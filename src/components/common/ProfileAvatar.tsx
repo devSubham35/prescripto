@@ -6,7 +6,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
     DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const menuItems = [
-  { title: "Profile", href: "/" },
+  { title: "Profile", href: navRoutes?.dashboards?.profile },
   { title: "My Appointments", href: navRoutes?.dashboards?.appointment },
   { title: "Logout", href: "/" },
 ];

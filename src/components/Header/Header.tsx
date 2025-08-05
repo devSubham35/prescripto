@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <div className='container'>
-      <div className='py-4 flex justify-between items-center border-b relative'>
+      <div className='py-4 flex justify-between items-center border-b relative '>
         {/* Logo */}
         <Link href={navRoutes?.home} className='w-[130px]'>
           <Image
